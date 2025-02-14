@@ -4,24 +4,153 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
-		<link rel="modulepreload" href="../_app/immutable/entry/start.g1a5wpcB.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/ChMfbtJ0.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/DPj0OQ9i.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/D5KOkoyA.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/XlGNaiFW.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.CJ9TvtD2.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/Cj6z6POx.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/Cp_wSCwS.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.qQhceSJb.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/3.eF1VfApi.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/DE09wv1d.js">
+		<link href="../_app/immutable/assets/3.BmIctdMb.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.41lp7er1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BqQlJBVA.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/uE4aWdR2.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/gGVeVaUg.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/B-o7Vvgl.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.C4JtbciX.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BIbElI0o.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BFlXgYgR.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DkiQviH1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BXm_Hmk_.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.oYNr037g.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/3.BKOavFe2.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Bh8M66E2.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DnDROii8.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DWdt3SbG.js">
   </head>
   <body>
-    <div><!--[--><!--[--><!----><!----><h1>About</h1> <p>Reload this page. You should see the same content.</p> <p>View the page source: the HTML is pre-rendered.</p><!----><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+    <div><!--[--><!--[--><!----><!----><h1 class="svelte-c0j5xz">Работа с JSON в PHP</h1> <p class="svelte-c0j5xz">В PHP поддержка JSON появилась с версии 5.2.0 и работает только с кодировкой UTF-8.</p> <h2 id="encoding" class="svelte-c0j5xz">1. Кодирование</h2> <p class="svelte-c0j5xz"><!--[!--><a rel="noopener noreferrer" href="https://www.php.net/manual/ru/function.json-encode.php" target="_blank" class="bx--link bx--link--visited"><!----><!----><!---->json_encode($value, $options)<!----><!----> <!--[--><div class="bx--link__icon"><!----><!----><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden="true"><!--[!--><!--]--><path d="M26,28H6a2.0027,2.0027,0,0,1-2-2V6A2.0027,2.0027,0,0,1,6,4H16V6H6V26H26V16h2V26A2.0027,2.0027,0,0,1,26,28Z"></path><path d="M20 2L20 4 26.586 4 18 12.586 19.414 14 28 5.414 28 12 30 12 30 2 20 2z"></path></svg><!----><!----></div><!--]--></a><!--]--><!----> – кодирует массив или объект в JSON.</p> <!--[!--><!--[!--><div class="bx--snippet bx--snippet--multi"><div style="width: 100%; min-height: 48px; max-height: 240px;" aria-label="code-snippet" class="bx--snippet-container"><pre><code><!----><!---->$array = array(
+	'1' => 'Значение 1', 
+	'2' => 'Значение 2', 
+	'3' => 'Значение 3', 
+	'4' => 'Значение 4', 
+	'5' => 'Значение 5'
+);
+			 
+$json = json_encode($array);
+echo $json;<!----></code></pre></div> <!--[--><button type="button" aria-live="polite" aria-label="Copy to clipboard" title="Copy to clipboard" class="bx--copy-btn bx--copy"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden="true" class="bx--snippet__icon"><!--[!--><!--]--><path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z"></path><path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z"></path></svg><!----> <span aria-hidden="true" class="bx--assistive-text bx--copy-btn__feedback">Copied!</span></button><!--]--> <!--[--><!--[!--><!--[!--><!--[!--><button type="button" tabindex="0" class="bx--btn bx--btn--sm bx--btn--sm bx--btn--ghost bx--snippet-btn--expand"><!--[!--><!--]--> <!----><span class="bx--snippet-btn--text">Show more</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" role="img" class="bx--icon-chevron--down bx--snippet__icon" aria-label="Show more"><!--[!--><!--]--><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg><!----><!----> <!--[!--><!--[!--><!--]--><!--]--></button><!--]--><!--]--><!--]--><!--]--></div><!--]--><!--]--><!----> <p class="svelte-c0j5xz">Результат:</p> <!--[!--><!--[!--><div class="bx--snippet bx--snippet--no-copy bx--snippet--single"><div style="width: 100%; min-height: 48px; max-height: 240px;" role="textbox" tabindex="0" aria-label="code-snippet" class="bx--snippet-container"><pre><code><!---->&lt;CodeSnippet code="{"1":"\u0417\u043d\u0430\u0447\u0435\u043d\u0438\u0435 1","2":"\u0417\u043d\u0430\u0447\u0435\u043d\u0438\u0435 2","3":"\u0417\u043d\u0430\u0447\u0435\u043d\u0438\u0435 3","4":"\u0417\u043d\u0430\u0447\u0435\u043d\u0438\u0435 4","5":"\u0417\u043d\u0430\u0447\u0435\u043d\u0438\u0435 5"}" hideCopyButton /><!----></code></pre></div> <!--[!--><!--]--> <!--[!--><!--]--></div><!--]--><!--]--><!----> <p class="svelte-c0j5xz">Как видно кириллица кодируется, исправляется это добавлением опции <span style="color: var(--cds-support-03)">JSON_UNESCAPED_UNICODE.</span></p> <!--[!--><!--[!--><div class="bx--snippet bx--snippet--multi"><div style="width: 100%; min-height: 48px; max-height: 240px;" aria-label="code-snippet" class="bx--snippet-container"><pre><code><!----><!---->$json = json_encode($array, JSON_UNESCAPED_UNICODE);
+echo $json;
+<!----></code></pre></div> <!--[--><button type="button" aria-live="polite" aria-label="Copy to clipboard" title="Copy to clipboard" class="bx--copy-btn bx--copy"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden="true" class="bx--snippet__icon"><!--[!--><!--]--><path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z"></path><path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z"></path></svg><!----> <span aria-hidden="true" class="bx--assistive-text bx--copy-btn__feedback">Copied!</span></button><!--]--> <!--[--><!--[!--><!--[!--><!--[!--><button type="button" tabindex="0" class="bx--btn bx--btn--sm bx--btn--sm bx--btn--ghost bx--snippet-btn--expand"><!--[!--><!--]--> <!----><span class="bx--snippet-btn--text">Show more</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" role="img" class="bx--icon-chevron--down bx--snippet__icon" aria-label="Show more"><!--[!--><!--]--><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg><!----><!----> <!--[!--><!--[!--><!--]--><!--]--></button><!--]--><!--]--><!--]--><!--]--></div><!--]--><!--]--><!----> <p class="svelte-c0j5xz">Результат:</p> <!--[!--><!--[!--><div class="bx--snippet bx--snippet--no-copy bx--snippet--single"><div style="width: 100%; min-height: 48px; max-height: 240px;" role="textbox" tabindex="0" aria-label="code-snippet" class="bx--snippet-container"><pre><code><!---->{"1":"Значение 1","2":"Значение 2","3":"Значение 3","4":"Значение 4","5":"Значение 5"}<!----></code></pre></div> <!--[!--><!--]--> <!--[!--><!--]--></div><!--]--><!--]--><!----> <p class="svelte-c0j5xz">Далее такую строку можно сохранить в файл, или отдать в браузер, например при AJAX запросах.</p> <!--[!--><!--[!--><div class="bx--snippet bx--snippet--multi"><div style="width: 100%; min-height: 48px; max-height: 240px;" aria-label="code-snippet" class="bx--snippet-container"><pre><code><!----><!---->header('Content-Type: application/json');
+echo $json;
+exit();
+<!----></code></pre></div> <!--[--><button type="button" aria-live="polite" aria-label="Copy to clipboard" title="Copy to clipboard" class="bx--copy-btn bx--copy"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden="true" class="bx--snippet__icon"><!--[!--><!--]--><path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z"></path><path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z"></path></svg><!----> <span aria-hidden="true" class="bx--assistive-text bx--copy-btn__feedback">Copied!</span></button><!--]--> <!--[--><!--[!--><!--[!--><!--[!--><button type="button" tabindex="0" class="bx--btn bx--btn--sm bx--btn--sm bx--btn--ghost bx--snippet-btn--expand"><!--[!--><!--]--> <!----><span class="bx--snippet-btn--text">Show more</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" role="img" class="bx--icon-chevron--down bx--snippet__icon" aria-label="Show more"><!--[!--><!--]--><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg><!----><!----> <!--[!--><!--[!--><!--]--><!--]--></button><!--]--><!--]--><!--]--><!--]--></div><!--]--><!--]--><!----> <h2 id="decoding" class="svelte-c0j5xz">2. Декодирование</h2> <p class="svelte-c0j5xz">Функция <!--[!--><a rel="noopener noreferrer" href="https://www.php.net/manual/ru/function.json-decode.php" target="_blank" class="bx--link bx--link--visited"><!----><!----><!---->json_decode($json)<!----><!----> <!--[--><div class="bx--link__icon"><!----><!----><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden="true"><!--[!--><!--]--><path d="M26,28H6a2.0027,2.0027,0,0,1-2-2V6A2.0027,2.0027,0,0,1,6,4H16V6H6V26H26V16h2V26A2.0027,2.0027,0,0,1,26,28Z"></path><path d="M20 2L20 4 26.586 4 18 12.586 19.414 14 28 5.414 28 12 30 12 30 2 20 2z"></path></svg><!----><!----></div><!--]--></a><!--]--><!----> преобразует строку в объект:</p> <!--[!--><!--[!--><div class="bx--snippet bx--snippet--multi"><div style="width: 100%; min-height: 48px; max-height: 240px;" aria-label="code-snippet" class="bx--snippet-container"><pre><code><!----><!---->$json = '{"1":"Значение 1","2":"Значение 2","3":"Значение 3","4":"Значение 4","5":"Значение 5"}';
+$array = json_decode($json);
+print_r($array);
+<!----></code></pre></div> <!--[--><button type="button" aria-live="polite" aria-label="Copy to clipboard" title="Copy to clipboard" class="bx--copy-btn bx--copy"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden="true" class="bx--snippet__icon"><!--[!--><!--]--><path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z"></path><path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z"></path></svg><!----> <span aria-hidden="true" class="bx--assistive-text bx--copy-btn__feedback">Copied!</span></button><!--]--> <!--[--><!--[!--><!--[!--><!--[!--><button type="button" tabindex="0" class="bx--btn bx--btn--sm bx--btn--sm bx--btn--ghost bx--snippet-btn--expand"><!--[!--><!--]--> <!----><span class="bx--snippet-btn--text">Show more</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" role="img" class="bx--icon-chevron--down bx--snippet__icon" aria-label="Show more"><!--[!--><!--]--><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg><!----><!----> <!--[!--><!--[!--><!--]--><!--]--></button><!--]--><!--]--><!--]--><!--]--></div><!--]--><!--]--><!----> <p class="svelte-c0j5xz">Результат:</p> <!--[!--><!--[!--><div class="bx--snippet bx--snippet--no-copy bx--snippet--multi"><div style="width: 100%; min-height: 48px; max-height: 240px;" aria-label="code-snippet" class="bx--snippet-container"><pre><code><!----><!---->stdClass Object
+(
+	[1] => Значение 1
+	[2] => Значение 2
+	[3] => Значение 3
+	[4] => Значение 4
+	[5] => Значение 5
+)
+<!----></code></pre></div> <!--[!--><!--]--> <!--[--><!--[!--><!--[!--><!--[!--><button type="button" tabindex="0" class="bx--btn bx--btn--sm bx--btn--sm bx--btn--ghost bx--snippet-btn--expand"><!--[!--><!--]--> <!----><span class="bx--snippet-btn--text">Show more</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" role="img" class="bx--icon-chevron--down bx--snippet__icon" aria-label="Show more"><!--[!--><!--]--><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg><!----><!----> <!--[!--><!--[!--><!--]--><!--]--></button><!--]--><!--]--><!--]--><!--]--></div><!--]--><!--]--><!----> <p class="svelte-c0j5xz">Если добавить вторым аргументом true, то произойдёт преобразование в массив:</p> <!--[!--><!--[!--><div class="bx--snippet bx--snippet--multi"><div style="width: 100%; min-height: 48px; max-height: 240px;" aria-label="code-snippet" class="bx--snippet-container"><pre><code><!----><!---->$json = '{"1":"Значение 1","2":"Значение 2","3":"Значение 3","4":"Значение 4","5":"Значение 5"}';
+$array = json_decode($json, true);
+print_r($array);
+<!----></code></pre></div> <!--[--><button type="button" aria-live="polite" aria-label="Copy to clipboard" title="Copy to clipboard" class="bx--copy-btn bx--copy"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden="true" class="bx--snippet__icon"><!--[!--><!--]--><path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z"></path><path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z"></path></svg><!----> <span aria-hidden="true" class="bx--assistive-text bx--copy-btn__feedback">Copied!</span></button><!--]--> <!--[--><!--[!--><!--[!--><!--[!--><button type="button" tabindex="0" class="bx--btn bx--btn--sm bx--btn--sm bx--btn--ghost bx--snippet-btn--expand"><!--[!--><!--]--> <!----><span class="bx--snippet-btn--text">Show more</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" role="img" class="bx--icon-chevron--down bx--snippet__icon" aria-label="Show more"><!--[!--><!--]--><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg><!----><!----> <!--[!--><!--[!--><!--]--><!--]--></button><!--]--><!--]--><!--]--><!--]--></div><!--]--><!--]--><!----> <p class="svelte-c0j5xz">Результат:</p> <!--[!--><!--[!--><div class="bx--snippet bx--snippet--no-copy bx--snippet--multi"><div style="width: 100%; min-height: 48px; max-height: 240px;" aria-label="code-snippet" class="bx--snippet-container"><pre><code><!----><!---->Array
+(
+	[1] => Значение 1
+	[2] => Значение 2
+	[3] => Значение 3
+	[4] => Значение 4
+	[5] => Значение 5
+)
+<!----></code></pre></div> <!--[!--><!--]--> <!--[--><!--[!--><!--[!--><!--[!--><button type="button" tabindex="0" class="bx--btn bx--btn--sm bx--btn--sm bx--btn--ghost bx--snippet-btn--expand"><!--[!--><!--]--> <!----><span class="bx--snippet-btn--text">Show more</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" role="img" class="bx--icon-chevron--down bx--snippet__icon" aria-label="Show more"><!--[!--><!--]--><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg><!----><!----> <!--[!--><!--[!--><!--]--><!--]--></button><!--]--><!--]--><!--]--><!--]--></div><!--]--><!--]--><!----> <h2 id="errors" class="svelte-c0j5xz">3. Получение ошибок и их исправление</h2> <p class="svelte-c0j5xz"><span style="color: var(--cds-support-03)">json_decode()</span> возвращает NULL, если в объекте есть ошибки, посмотреть их можно с помощью функции <span style="color: var(--cds-support-03)">json_last_error():</span></p> <!--[!--><!--[!--><div class="bx--snippet bx--snippet--multi"><div style="width: 100%; min-height: 48px; max-height: 240px;" aria-label="code-snippet" class="bx--snippet-container"><pre><code><!----><!---->$json = '{"1:"Значение 1"}';
+$array = json_decode($json, true);
+			 
+switch (json_last_error()) {
+	case JSON_ERROR_NONE:
+		echo 'Ошибок нет';
+	break;
+	case JSON_ERROR_DEPTH:
+		echo 'Достигнута максимальная глубина стека';
+	break;
+	case JSON_ERROR_STATE_MISMATCH:
+		echo 'Некорректные разряды или несоответствие режимов';
+	break;
+	case JSON_ERROR_CTRL_CHAR:
+		echo 'Некорректный управляющий символ';
+	break;
+	case JSON_ERROR_SYNTAX:
+		echo 'Синтаксическая ошибка, некорректный JSON';
+	break;
+	case JSON_ERROR_UTF8:
+		echo 'Некорректные символы UTF-8, возможно неверно закодирован';
+	break;
+	default:
+		echo 'Неизвестная ошибка';
+	break;
+}
+<!----></code></pre></div> <!--[--><button type="button" aria-live="polite" aria-label="Copy to clipboard" title="Copy to clipboard" class="bx--copy-btn bx--copy"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden="true" class="bx--snippet__icon"><!--[!--><!--]--><path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z"></path><path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z"></path></svg><!----> <span aria-hidden="true" class="bx--assistive-text bx--copy-btn__feedback">Copied!</span></button><!--]--> <!--[--><!--[!--><!--[!--><!--[!--><button type="button" tabindex="0" class="bx--btn bx--btn--sm bx--btn--sm bx--btn--ghost bx--snippet-btn--expand"><!--[!--><!--]--> <!----><span class="bx--snippet-btn--text">Show more</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" role="img" class="bx--icon-chevron--down bx--snippet__icon" aria-label="Show more"><!--[!--><!--]--><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg><!----><!----> <!--[!--><!--[!--><!--]--><!--]--></button><!--]--><!--]--><!--]--><!--]--></div><!--]--><!--]--><!----> <p class="svelte-c0j5xz">Посмотреть значения констант JSON:</p> <!--[!--><!--[!--><div class="bx--snippet bx--snippet--multi"><div style="width: 100%; min-height: 48px; max-height: 240px;" aria-label="code-snippet" class="bx--snippet-container"><pre><code><!----><!---->$constants = get_defined_constants(true);
+foreach ($constants['json'] as $name => $value) {
+	echo $name . ': ' . $value . '&lt;br>';
+}
+<!----></code></pre></div> <!--[--><button type="button" aria-live="polite" aria-label="Copy to clipboard" title="Copy to clipboard" class="bx--copy-btn bx--copy"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden="true" class="bx--snippet__icon"><!--[!--><!--]--><path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z"></path><path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z"></path></svg><!----> <span aria-hidden="true" class="bx--assistive-text bx--copy-btn__feedback">Copied!</span></button><!--]--> <!--[--><!--[!--><!--[!--><!--[!--><button type="button" tabindex="0" class="bx--btn bx--btn--sm bx--btn--sm bx--btn--ghost bx--snippet-btn--expand"><!--[!--><!--]--> <!----><span class="bx--snippet-btn--text">Show more</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" role="img" class="bx--icon-chevron--down bx--snippet__icon" aria-label="Show more"><!--[!--><!--]--><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg><!----><!----> <!--[!--><!--[!--><!--]--><!--]--></button><!--]--><!--]--><!--]--><!--]--></div><!--]--><!--]--><!----> <p class="svelte-c0j5xz">Результат:</p> <!--[!--><!--[!--><div class="bx--snippet bx--snippet--no-copy bx--snippet--multi"><div style="width: 100%; min-height: 48px; max-height: 240px;" aria-label="code-snippet" class="bx--snippet-container"><pre><code><!----><!---->JSON_HEX_TAG: 1
+JSON_HEX_AMP: 2
+JSON_HEX_APOS: 4
+JSON_HEX_QUOT: 8
+JSON_FORCE_OBJECT: 16
+JSON_NUMERIC_CHECK: 32
+JSON_UNESCAPED_SLASHES: 64
+JSON_PRETTY_PRINT: 128
+JSON_UNESCAPED_UNICODE: 256
+JSON_PARTIAL_OUTPUT_ON_ERROR: 512
+JSON_PRESERVE_ZERO_FRACTION: 1024
+JSON_UNESCAPED_LINE_TERMINATORS: 2048
+JSON_OBJECT_AS_ARRAY: 1
+JSON_BIGINT_AS_STRING: 2
+JSON_ERROR_NONE: 0
+JSON_ERROR_DEPTH: 1
+JSON_ERROR_STATE_MISMATCH: 2
+JSON_ERROR_CTRL_CHAR: 3
+JSON_ERROR_SYNTAX: 4
+JSON_ERROR_UTF8: 5
+JSON_ERROR_RECURSION: 6
+JSON_ERROR_INF_OR_NAN: 7
+JSON_ERROR_UNSUPPORTED_TYPE: 8
+JSON_ERROR_INVALID_PROPERTY_NAME: 9
+JSON_ERROR_UTF16: 10
+<!----></code></pre></div> <!--[!--><!--]--> <!--[--><!--[!--><!--[!--><!--[!--><button type="button" tabindex="0" class="bx--btn bx--btn--sm bx--btn--sm bx--btn--ghost bx--snippet-btn--expand"><!--[!--><!--]--> <!----><span class="bx--snippet-btn--text">Show more</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" role="img" class="bx--icon-chevron--down bx--snippet__icon" aria-label="Show more"><!--[!--><!--]--><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg><!----><!----> <!--[!--><!--[!--><!--]--><!--]--></button><!--]--><!--]--><!--]--><!--]--></div><!--]--><!--]--><!----> <p class="svelte-c0j5xz">Если вы хотите распарсить JS объект из HTML страницы или файла, то скорее всего json_decode вернет ошибку т.к. в коде будут <!--[!--><a rel="noopener noreferrer" href="https://snipp.ru/handbk/table-ascii#link-upravlyayuschie-simvoly" target="_blank" class="bx--link bx--link--visited"><!----><!----><!---->управляющие символы<!----><!----> <!--[--><div class="bx--link__icon"><!----><!----><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden="true"><!--[!--><!--]--><path d="M26,28H6a2.0027,2.0027,0,0,1-2-2V6A2.0027,2.0027,0,0,1,6,4H16V6H6V26H26V16h2V26A2.0027,2.0027,0,0,1,26,28Z"></path><path d="M20 2L20 4 26.586 4 18 12.586 19.414 14 28 5.414 28 12 30 12 30 2 20 2z"></path></svg><!----><!----></div><!--]--></a><!--]--><!----> или BOM. Удалить их можно следующим образом:</p> <!--[!--><!--[!--><div class="bx--snippet bx--snippet--multi"><div style="width: 100%; min-height: 48px; max-height: 240px;" aria-label="code-snippet" class="bx--snippet-container"><pre><code><!----><!---->$json = '{...}';
+
+// Удаление управляющих символов
+for ($i = 0; $i &lt;= 31; ++$i) { 
+	$json = str_replace(chr($i), '', $json); 
+}
+			 
+// Удаление символа Delete
+$json = str_replace(chr(127), '', $json);
+			 
+// Удаление BOM
+if (0 === strpos(bin2hex($json), 'efbbbf')) {
+	$json = substr($json, 3);
+}
+			 
+$res = json_decode($json, true);
+print_r($res);
+<!----></code></pre></div> <!--[--><button type="button" aria-live="polite" aria-label="Copy to clipboard" title="Copy to clipboard" class="bx--copy-btn bx--copy"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden="true" class="bx--snippet__icon"><!--[!--><!--]--><path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z"></path><path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z"></path></svg><!----> <span aria-hidden="true" class="bx--assistive-text bx--copy-btn__feedback">Copied!</span></button><!--]--> <!--[--><!--[!--><!--[!--><!--[!--><button type="button" tabindex="0" class="bx--btn bx--btn--sm bx--btn--sm bx--btn--ghost bx--snippet-btn--expand"><!--[!--><!--]--> <!----><span class="bx--snippet-btn--text">Show more</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" role="img" class="bx--icon-chevron--down bx--snippet__icon" aria-label="Show more"><!--[!--><!--]--><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg><!----><!----> <!--[!--><!--[!--><!--]--><!--]--></button><!--]--><!--]--><!--]--><!--]--></div><!--]--><!--]--><!----> <h2 id="http" class="svelte-c0j5xz">4. HTTP-запросы в формате JSON</h2> <p class="svelte-c0j5xz">Некоторые сервисы требуют чтобы запросы к ним осуществлялись в формате JSON, такой запрос можно сформировать в CURL:</p> <!--[!--><!--[!--><div class="bx--snippet bx--snippet--multi"><div style="width: 100%; min-height: 48px; max-height: 240px;" aria-label="code-snippet" class="bx--snippet-container"><pre><code><!----><!---->$data = array(
+	'name' => 'snipp.ru'
+	'text' => 'Отправка сообщения',
+);
+			 
+$ch = curl_init('https://example.com');
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($ch, CURLOPT_HEADER, false);
+curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json')); 	
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+$res = curl_exec($ch);
+curl_close($ch);
+<!----></code></pre></div> <!--[--><button type="button" aria-live="polite" aria-label="Copy to clipboard" title="Copy to clipboard" class="bx--copy-btn bx--copy"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden="true" class="bx--snippet__icon"><!--[!--><!--]--><path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z"></path><path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z"></path></svg><!----> <span aria-hidden="true" class="bx--assistive-text bx--copy-btn__feedback">Copied!</span></button><!--]--> <!--[--><!--[!--><!--[!--><!--[!--><button type="button" tabindex="0" class="bx--btn bx--btn--sm bx--btn--sm bx--btn--ghost bx--snippet-btn--expand"><!--[!--><!--]--> <!----><span class="bx--snippet-btn--text">Show more</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" role="img" class="bx--icon-chevron--down bx--snippet__icon" aria-label="Show more"><!--[!--><!--]--><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg><!----><!----> <!--[!--><!--[!--><!--]--><!--]--></button><!--]--><!--]--><!--]--><!--]--></div><!--]--><!--]--><!----> <p class="svelte-c0j5xz">А также могут обратится к вашим скриптам в таком формате, чтение JSON запроса.</p> <!--[!--><!--[!--><div class="bx--snippet bx--snippet--multi"><div style="width: 100%; min-height: 48px; max-height: 240px;" aria-label="code-snippet" class="bx--snippet-container"><pre><code><!----><!---->$data = file_get_contents('php://input');
+$data = json_decode($data, true);
+<!----></code></pre></div> <!--[--><button type="button" aria-live="polite" aria-label="Copy to clipboard" title="Copy to clipboard" class="bx--copy-btn bx--copy"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden="true" class="bx--snippet__icon"><!--[!--><!--]--><path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z"></path><path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z"></path></svg><!----> <span aria-hidden="true" class="bx--assistive-text bx--copy-btn__feedback">Copied!</span></button><!--]--> <!--[--><!--[!--><!--[!--><!--[!--><button type="button" tabindex="0" class="bx--btn bx--btn--sm bx--btn--sm bx--btn--ghost bx--snippet-btn--expand"><!--[!--><!--]--> <!----><span class="bx--snippet-btn--text">Show more</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" role="img" class="bx--icon-chevron--down bx--snippet__icon" aria-label="Show more"><!--[!--><!--]--><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg><!----><!----> <!--[!--><!--[!--><!--]--><!--]--></button><!--]--><!--]--><!--]--><!--]--></div><!--]--><!--]--><!----><!----><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
 			
 			<script>
 				{
-					__sveltekit_v2a8i9 = {
+					__sveltekit_182anhs = {
 						base: new URL("..", location).pathname.slice(0, -1),
 						assets: "/JSON"
 					};
@@ -29,8 +158,8 @@
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../_app/immutable/entry/start.g1a5wpcB.js"),
-						import("../_app/immutable/entry/app.CJ9TvtD2.js")
+						import("../_app/immutable/entry/start.41lp7er1.js"),
+						import("../_app/immutable/entry/app.C4JtbciX.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 3],
